@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #eef2f7;
+  padding: 20px;
+}
+
+.resume {
+  max-width: 1100px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  border-bottom: 3px solid #4f46e5;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  font-size: 32px;
+  color: #1e293b;
+}
+
+.role {
+  font-size: 15px;
+  color: #4f46e5;
+  margin: 5px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #4f46e5;
+  margin-bottom: 10px;
+  border-left: 4px solid #4f46e5;
+  padding-left: 8px;
+}
+
+p, li {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 2px solid #4f46e5;
+  padding-left: 15px;
+}
+
+.entry {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #4f46e5;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* PROJECT CARD */
+.card {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* SKILLS */
+.skill {
+  margin-bottom: 12px;
+}
+
+.bar {
+  height: 7px;
+  background: #e5e7eb;
+  border-radius: 5px;
+}
+
+.bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  border-radius: 5px;
+}
+
+/* TAGS */
+.tags span {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin: 4px 4px 0 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .left, .right {
+    width: 100%;
+  }
+}
+
+/* PRINT */
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+  .resume {
+    box-shadow: none;
+  }
+}
